@@ -21,12 +21,11 @@ export const Skill = (props: SkillPropsType) => {
 const StyledSkill = styled.div`
   width: 30%;
   margin: 10px;
-  border: 3px solid green;
   background-color: aquamarine;
 `
 const StyledTitle = styled.h3`
-  border: 3px dashed red;
+
 `
 const StyledText = styled.p`
-  border: 4px double yellow;
+
 `
