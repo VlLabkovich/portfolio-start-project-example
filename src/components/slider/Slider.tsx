@@ -23,7 +23,6 @@ export const Slider = () => {
 };
 
 const StyledSlider = styled.div`
-    border: 4px solid red;
     max-width: 500px;
 `
 
