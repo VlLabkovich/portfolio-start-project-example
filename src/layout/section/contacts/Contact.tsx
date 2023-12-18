@@ -20,7 +20,6 @@ export const Contact = () => {
 const StyledContacts = styled.section`
     min-height: 50vh;
     background-color: blueviolet;
-    border: 2px dashed red;
 `
 
 const StyledForm = styled.form`
@@ -29,7 +28,6 @@ const StyledForm = styled.form`
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border: 2px dashed #ffffff;
 `
 
 const Field = styled.input`
