@@ -17,7 +17,6 @@ export const Main = () => {
                     </div>
                     <PhotoWrapper>
                         <Photo src={photo} alt=""/>
-
                     </PhotoWrapper>
                 </FlexWrapper>
             </Container>
