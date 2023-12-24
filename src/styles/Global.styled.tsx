@@ -24,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
     a {
         text-decoration: none; // убираем подчёркивания для ссылок
         color: ${theme.colors.font};
+        cursor: pointer;
     }
 
     ul {
