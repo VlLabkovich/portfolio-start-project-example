@@ -30,8 +30,9 @@ export const Work = (props: WorkPropsType) => {
 
 const StyledWork = styled.div`
     max-width: 540px;
-    width: 100%;
+    width: 330px;
     background: ${theme.colors.secondaryBg};
+    flex-grow: 1;
 
     ${Link} {
         padding: 10px 0;
@@ -40,10 +41,29 @@ const StyledWork = styled.div`
             margin-left: 20px;
         }
     }
+
+    @media ${theme.media.desktop} {
+        max-width: 540px;
+    }
 `
 
 const ImageWrapper = styled.div`
     position: relative;
+
+    ${Button} {
+        opacity: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        &::before {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // центрирование кнопки
 
     &:hover {
         &::before {
@@ -55,25 +75,30 @@ const ImageWrapper = styled.div`
             bottom: 0;
             background: rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(4px);
+            opacity: 0;
         }
+
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
 
         ${Button} {
             opacity: 1;
         }
     }
 
-    ${Button} {
-        opacity: 0;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        
+    @media ${theme.media.tablet} {
         &::before {
-            width: 100%;
-            height: 100%;
+            opacity: 1;
         }
-    } // центрирование кнопки
+    }
+
+    ${Button} {
+        opacity: 1;
+    }
+}
+
 `
 
 const Image = styled.img`
