@@ -11,6 +11,10 @@ export const SectionTitle = styled.h2`
     letter-spacing: 5px;
     margin-bottom: 90px;
     
+    @media ${theme.media.mobile} {
+        letter-spacing: 3px;
+    }
+    
     position: relative;
     
     &::before {
