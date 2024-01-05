@@ -29,6 +29,12 @@ const StyledMain = styled.section`
     min-height: 100vh;
     background-color: #fff5e7;
     display: flex;
+
+    @media ${theme.media.mobile} {
+        min-height: unset;
+        background-color: #fff5e7;
+        display: flex;
+    }
 `
 
 const PhotoWrapper = styled.div`
