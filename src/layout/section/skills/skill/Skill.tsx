@@ -30,7 +30,7 @@ const StyledSkill = styled.div`
     padding: 42px 20px 51px;
     
     @media ${theme.media.mobile} {
-        padding: 62px 0 40px;
+        padding: 6px 0 95px;
     }
 `
 
