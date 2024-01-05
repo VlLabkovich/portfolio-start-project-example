@@ -30,7 +30,7 @@ const StyledTestimony = styled.section`
 
 
         @media ${theme.media.mobile} {
-            margin-top: 32px;
+            margin-top: 13px;
         }
     }
 
