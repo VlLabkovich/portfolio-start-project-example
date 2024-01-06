@@ -29,7 +29,6 @@ export const Work = (props: WorkPropsType) => {
 };
 
 const StyledWork = styled.div`
-    max-width: 540px;
     width: 330px;
     background: ${theme.colors.secondaryBg};
     flex-grow: 1;
