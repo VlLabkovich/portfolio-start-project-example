@@ -29,17 +29,12 @@ const StyledMain = styled.section`
     min-height: 100vh;
     background-color: #fff5e7;
     display: flex;
-
-    @media ${theme.media.mobile} {
-        min-height: unset;
-        background-color: #fff5e7;
-        display: flex;
-    }
 `
 
 const PhotoWrapper = styled.div`
     position: relative;
     z-index: 0;
+    margin-top: 65px;
 
     &::before {
         content: "";
@@ -60,10 +55,6 @@ const PhotoWrapper = styled.div`
             
         }
     }
-
-    @media ${theme.media.mobile} {
-        margin-top: 65px;
-    }
 `
 
 const Photo = styled.img`
@@ -81,33 +72,28 @@ const Photo = styled.img`
 `
 
 const MainTitle = styled.h1`
-    //font-size: 27px;
-    //font-weight: 400;
     ${font({weight: 400, Fmax: 27, Fmin: 20})}
 
 `
 
 const Name = styled.h2`
     ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 50, Fmin: 36})}
-    //font-family: 'Josefin Sans', sans-serif;
-    //font-size: 50px;
-    //font-weight: 700;
     letter-spacing: 0.05em;
     margin: 10px 0;
 
     span {
         position: relative;
         z-index: 0;
-        white-space: nowrap;
+        white-space: nowrap; //отменяет перенос слов
 
         &::before {
-            position: absolute;
             content: "";
             display: inline-block;
             width: 100%;
             height: 20px;
             background-color: ${theme.colors.accent};
-
+            
+            position: absolute;
             bottom: 0;
             z-index: -1;
         }
